@@ -1,0 +1,22 @@
+---
+title: "RTL and i18n belong in the product architecture"
+publishedAt: "2026-10-29"
+author: "Masoumeh Ashrafi"
+summary: "Directionality affects structure, navigation, and interaction. Planning for RTL early makes multilingual interfaces more coherent."
+---
+
+Right-to-left support is often treated as a visual adjustment at the end of a project. In practice, direction affects information hierarchy, navigation, icons, form alignment, and the order in which someone moves through a page.
+
+Planning for RTL from the start encourages flexible layouts. Logical CSS properties, direction-aware components, and content that can expand naturally are useful for every language, not only Persian or Arabic.
+
+A multilingual interface should feel native in each language. That means testing real content, mixed-direction text, numbers, keyboard navigation, and the small interactions that make a product feel coherent.
+
+## Start with structure
+
+Use semantic HTML and layout primitives that adapt to direction. Avoid hard-coding left and right when the relationship is really “start” and “end.” Keep icons meaningful: some should mirror in RTL, while familiar symbols such as play or brand marks should not.
+
+## Test real content
+
+Short placeholder strings hide layout problems. Test long Persian and English labels, dates, numbers, mixed-language paragraphs, and form errors. A component that works with real content is easier to trust and maintain.
+
+Treat RTL and i18n as product requirements from the first layout decisions. The result is clearer for multilingual users and more resilient for the team building the interface.

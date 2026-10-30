@@ -1,0 +1,24 @@
+---
+title: "Performance starts with frontend architecture"
+publishedAt: "2026-10-29"
+author: "Masoumeh Ashrafi"
+summary: "Rendering choices, component boundaries, and client-side JavaScript shape how quickly a product feels ready."
+---
+
+Performance is shaped by architecture. Route boundaries, rendering strategy, component size, and the amount of JavaScript sent to a browser all influence when an interface starts to feel usable.
+
+I start by asking what needs to be interactive and when. Keeping predictable UI on the server and moving only necessary behavior to the client can reduce work without making the code harder to understand.
+
+## Make the first view useful
+
+Prioritize the content and controls a person needs first. Avoid delaying the main page behind work that can happen later, and give loading states a clear purpose instead of adding motion for its own sake.
+
+## Keep boundaries intentional
+
+Small, reusable components make it easier to see what is rendered and where interaction begins. Route-level splitting, optimized media, and a careful dependency budget can improve loading without turning every part of the app into a performance project.
+
+## Measure the experience
+
+Use real-device checks and Core Web Vitals to find bottlenecks. A fast local development server is not evidence that a page feels fast on a slower phone or connection.
+
+The most useful performance work is repeatable. A clear structure makes good loading decisions easier to make across the whole product.

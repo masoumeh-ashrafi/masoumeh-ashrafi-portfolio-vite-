@@ -1,33 +1,29 @@
 # Masoumeh Ashrafi — Portfolio
 
-A responsive developer portfolio for Masoumeh Ashrafi, a freelance frontend engineer in Tehran focused on React, Next.js, TypeScript, performance, technical SEO, accessibility, and RTL/i18n.
+A personal portfolio for Masoumeh Ashrafi, a frontend engineer focused on React, Next.js, TypeScript, scalable UI architecture, performance, technical SEO, accessibility, and RTL/i18n.
 
-## Update the content
+The visual foundation and components are adapted from [Magic UI Portfolio](https://github.com/magicuidesign/portfolio) by Dillion Verma and remain covered by its included MIT license.
 
-Edit `src/config.js` to change the profile, contact details, social links, skills, selected projects, experience, and writing. Each featured project includes its case study and live project links. Blog entries are marked `Draft` so they can be reviewed before publishing.
+## Personalize
+
+Update `src/data/resume.tsx` to edit the profile, contact links, skills, experience, education, projects, and focus areas. Blog articles live in `content/` as MDX files.
 
 ## Run locally
 
-Requires Node.js 20.19+ or 22.12+.
+Requires Node.js 20.9 or newer.
 
 ```bash
 npm install
 npm run dev
 ```
 
-Vite prints the local development URL in the terminal. Create and preview a production build with:
+Open the local URL shown in the terminal. To create a production build:
 
 ```bash
 npm run build
-npm run preview
+npm run start
 ```
 
 ## Deploy
 
-The production site is generated in `dist/`. It can be deployed to Vercel or another static hosting service. For GitHub Pages, set the project base path in `vite.config.js` when deploying under a repository subpath.
-
-## Built with
-
-- React
-- Vite
-- CSS with responsive layouts and reduced-motion support
+Import this repository in Vercel. The project uses Next.js, so Vercel detects the framework and its build settings automatically.
